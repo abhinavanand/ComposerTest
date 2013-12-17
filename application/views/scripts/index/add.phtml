@@ -1,0 +1,25 @@
+
+    <p><strong><?php echo $this->title;?></strong></p>
+    <form method="post" action="/index/insert">  
+    <table>
+<tr>
+<td width="50">First Name : </td><td><input name="FirstName" type="text" value="<?php echo $this->FirstName; ?>"></td><br><br>
+</tr>
+<tr>
+<td width="50">Last Name : </td><td><input name="LastName" type="text" value="<?php echo $this->LastName; ?>"></td><br><br>
+</tr>
+<tr>
+<td>Hobby : </td><td><input type="checkbox" name="Hobby[]" value="Music">Music <br></td>
+                   <td><input type="checkbox" name="Hobby[]" value="Sports">Sports <br></td>
+                   <td><input type="checkbox" name="Hobby[]" value="Movies">Movies<br></td>
+                   <td><input type="checkbox" name="Hobby[]" value="Reading">Reading<br></td>
+
+</tr>
+<tr>
+<td>
+<input type="submit" name="Submit" value="Submit">
+</td>
+</tr>
+</table>
+   </form>
+    

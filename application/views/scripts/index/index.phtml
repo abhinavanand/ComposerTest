@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Cp1252">
+<title>Home Page</title>
+</head>
+
+    <body>    
+    <a href="/index/add"><b>ADD RECORD</b></a><br><br><br><br>
+        
+    <table border='1'>
+    <tr><th>ID</th><th>First Name</th> <th>Last Name</th> <th>Hobby</th> </tr>
+    <?php 
+    foreach($this->row as $value)
+    {?>
+    <tr>
+    <td><?php echo $value['id'];?></td>
+    <td><?php echo $value['FirstName'];?></td>
+    <td><?php echo $value['LastName'];?></td>
+    <td><?php echo $value['Hobby'];?></td>
+    <td><a href="/index/edit?id=<?php echo $value['id'];?>">Edit</a></td>
+    <td><a href="/index/delete?id=<?php echo $value['id'];?>">Delete</a></td>
+    </tr>
+    <?php } 
+    ?>    
+    </table>
+	</body>    
+</html>
