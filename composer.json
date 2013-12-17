@@ -1,0 +1,18 @@
+{
+    "name": "ComposerTest/ComposerTest",
+    "type": "library",
+    "description": "Thin wrapper for phpredis",
+    "keywords": ["nosql", "redis", "phpredis"],
+    "homepage": "https://github.com/abhinavanand/ComposerTest",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abhinav",
+            "email": "abhinav.anand@synergytechservices.com",
+            "homepage": "https://github.com/abhinavanand/ComposerTest"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    }
+}
